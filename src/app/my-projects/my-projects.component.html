@@ -1,0 +1,59 @@
+<div class="container" id="first">
+  <div class="row">
+    <div class="col-12 justify-content-center text-center">
+      <img src="../../assets/flower (2).png" id="flower" />
+      <div id="text">Time to show off!</div>
+      <div id="subtext">Projects - for work, school and for fun!</div>
+    </div>
+  </div>
+</div>
+
+<div class="flex-container">
+  <ng-container *ngFor="let project of projectListBase">
+    <div routerLink="project/{{ project.id }}">
+      <div class="language">
+        <img src="{{ project.pictures[0] }}" id="img" />
+        <div class="languagecontainer">
+          <div id="language" *ngFor="let language of project.languages">
+            {{ language }}
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        {{ project.name }}
+      </div>
+      <div class="text">{{ project.shorttext }}</div>
+      <!--<button
+        type="button"
+        class="btn btn-warning"
+        routerLink="project/{{ project.id }}"
+      >
+        View details
+      </button>-->
+    </div>
+  </ng-container>
+</div>
+
+<!--<div class="container">
+  <div class="year">2019</div>
+</div>
+
+<div class="flex-container">
+  <ng-container *ngFor="let project of projectListBase">
+    <div *ngIf="project.year == '2019'" routerLink="project/{{ project.id }}">
+      <div class="language">
+        <img src="{{ project.pictures[0] }}" width="100%" id="img" />
+        <div class="languagecontainer">
+          <div id="language" *ngFor="let language of project.languages">
+            {{ language }}
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        {{ project.name }}
+      </div>
+      <div class="text">{{ project.shorttext }}</div>
+      <!--<button type="button" class="btn btn-warning">View details</button>-->
+<!--</div>
+  </ng-container>
+</div>-->

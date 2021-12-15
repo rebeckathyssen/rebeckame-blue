@@ -1,0 +1,31 @@
+#first {
+  position: relative;
+  top: 200px;
+}
+
+#flower {
+  width: 20px;
+  margin-top: 150px;
+  margin-bottom: 7px;
+}
+
+#text {
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+#subtext {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+#back {
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
+  //transform: rotate(180deg);
+  //margin-top: 35px;
+}

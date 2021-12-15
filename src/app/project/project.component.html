@@ -1,0 +1,54 @@
+<div class="container" id="first">
+  <div class="row">
+    <div class="col-12 justify-content-center text-center">
+      <img src="../../assets/flower (2).png" id="flower" />
+      <div id="text">Coding times!</div>
+      <div id="subtext">{{ project.name }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 justify-content-center text-center">
+      <img src="{{ project.pictures[1] }}" width="20%" />
+    </div>
+    <div class="col-6 justify-content-center text-center">
+      <p>project works!</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 justify-content-center text-center">
+      Play {{ project.name }} !
+    </div>
+  </div>
+
+  <div class="row" [ngSwitch]="project.name">
+    <div
+      class="col-12 justify-content-center text-center"
+      *ngSwitchCase="'The Tradesman'"
+    >
+      <app-thetradesman></app-thetradesman>
+    </div>
+
+    <div
+      class="col-12 justify-content-center text-center"
+      *ngSwitchCase="'Ludo'"
+    >
+      <app-ludo></app-ludo>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 justify-content-center text-center">
+      <button type="button" routerLink="" class="btn btn-danger">
+        Go back
+      </button>
+    </div>
+  </div>
+</div>

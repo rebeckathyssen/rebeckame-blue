@@ -1,0 +1,97 @@
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+#pic {
+  width: 100%;
+}
+
+#name {
+  font-family: "Permanent Marker", cursive;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  width: 100%;
+  text-shadow: 1px 1px #ffffff;
+}
+
+#title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  color: #faf5ef;
+  font-family: "Mallanna", sans-serif;
+  font-size: 20px;
+  background-color: #2180d0;
+  padding: 0px 20px 0px 20px;
+  border: 2px solid #8cbee7;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 1px #0000006e;
+}
+
+#first {
+  position: relative;
+  top: -30px;
+  margin-bottom: 15%;
+}
+
+#flower {
+  width: 20px;
+  margin-bottom: 7px;
+}
+
+#text {
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+#subtext {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
+.fa-smile,
+.fa-code,
+.fa-file {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#2180d0),
+    to(#7cb9e8)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  filter: drop-shadow(3px 3px 1px #badaf3);
+  margin-bottom: 20px;
+}
+
+#belowicon {
+  font-weight: 500;
+}
+
+.col-lg-2 {
+  padding-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.col-lg-2:hover {
+  transform: scale(1.1);
+  //-webkit-box-shadow: 10px 10px 5px -5px rgba(230, 230, 230, 1);
+  //-moz-box-shadow: 10px 10px 5px -5px rgba(230, 230, 230, 1);
+  //box-shadow: 10px 10px 5px -5px rgba(230, 230, 230, 1);
+  //border-radius: 10px;
+}
+
+.nav-link {
+  color: black;
+}
